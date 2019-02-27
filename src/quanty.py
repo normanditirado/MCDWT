@@ -14,6 +14,7 @@ def quantization(prefix,step):
 
     print("Quantizacion de la Subanda:",prefix)
     image=(np.array([image])/step)*step
+    #image=int(np.array([image])/step)*step
     print(image)
     
 quantization("/tmp/LH000.png",60)
